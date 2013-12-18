@@ -1,0 +1,26 @@
+  <div class="col-lg-5" ng-controller="IndexCtrl">
+
+    <h1>Basic Angular on Rails etc</h1>
+
+    <table class="table">
+      <tr>
+        <th>Lowercase Name**</th>
+        <th>Age</th>
+        <th>Gender</th>
+      </tr>
+      <tr>
+        <td>{{user.name | lowercase}}</td>
+        <td>{{user.age}}</td>
+        <td>{{user.gender}}</td>
+      </tr>
+    </table>
+
+    <div>
+      <label for="username">User Name:</label>
+      <input type="text" ng-model="user.name" id="username" name="username"></input>
+    </div>
+
+    <div class="examples alert alert-info">
+      <p>DYNAMIC FIELDS ASTERISKED **</p>
+    </div>
+  </div>
